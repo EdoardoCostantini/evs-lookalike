@@ -4,6 +4,7 @@
 
 # R data files
 *.rds
+!EVS_syn.rds
 .RData
 .RDataTmp
 
