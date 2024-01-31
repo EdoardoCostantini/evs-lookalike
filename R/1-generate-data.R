@@ -1,11 +1,11 @@
 # Project:   evs-lookalike
-# Objective: Generate data that looks like EVS data
+# Objective: Generate a toy data that looks like EVS data
 # Author:    Edoardo Costantini
 # Created:   2023-11-09
-# Modified:  2023-11-09
+# Modified:  2024-01-31
 # Notes: 
 
-#
+# Load required packages
 library(dplyr)
 
 # Load EVS data
@@ -21,6 +21,8 @@ EVS <- EVS %>%
             "Netherlands"
         )
     )
+
+# Drop the emptu country levels
 EVS$country <- droplevels(EVS$country)
 
 # Define model variables
@@ -81,7 +83,7 @@ var_subset <- c(
     var_types$cat[c(16:19, 31)]
 )
 
-#
+# Store only the active variables
 EVS_toy <- EVS[, c(model_vars, var_subset)]
 
 # Store data

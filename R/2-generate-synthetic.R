@@ -1,8 +1,8 @@
 # Project:   evs-lookalike
-# Objective: Synthesize data
+# Objective: Synthesize the toy data for distribution
 # Author:    Edoardo Costantini
 # Created:   2023-11-23
-# Modified:  2023-11-23
+# Modified:  2024-01-31
 # Notes: 
 
 # Load packages
